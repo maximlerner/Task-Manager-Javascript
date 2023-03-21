@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: lobster;
+}
+
+body {
+  background-image: url("images/cork-board.jpg");
+}
+
+/* 1) Task form */
+
+#title {
+  font-size: 120%;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 150%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.notepad-form {
+  margin-top: 3%;
+  background-image: url("images/seamless-notebook-1.jpg");
+  width: 40%;
+  padding: 1%;
+  margin-left: 30%;
+  font-size: 180%;
+  box-shadow: 3px 3px rgb(46, 46, 46);
+}
+
+.formBox {
+  display: flex;
+  padding: 0.5rem 2rem;
+}
+
+.formBtn {
+  padding: 3px;
+}
+
+.btn {
+  padding: 6px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 3px 3px rgb(119, 116, 116);
+}
+
+.green {
+  background-color: #198754;
+}
+
+.orange {
+  background-color: #fd7e14;
+  margin-left: 10%;
+  margin-right: 4%;
+}
+
+.actions {
+  margin: 3% 0% 3% 25%;
+  display: flex;
+}
+
+#time,
+#data,
+#hour {
+  width: 60%;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.checkedbox {
+  margin-top: 10%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.checkmark {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 4px;
+  position: relative;
+  transition: background-color 0.4s;
+  box-shadow: 3px 3px rgb(119, 116, 116);
+}
+
+#check:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 15px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  left: 50%;
+  transform: translate(-50%, 50%) rotateZ(40deg);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#check:checked~.checkmark::after {
+  opacity: 1;
+}
+
+
+
+#checkmarkBtn {
+  border: none;
+  background-color: transparent;
+}
+
+/* 2) Notes */
+
+.note {
+  display: inline-block;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url("images/yellow-notepad.jpg");
+  padding: 1%;
+  min-width: 13%;
+  max-width: 13%;
+  height: 340px;
+  margin: 0% 5%;
+  margin-top: 3%;
+  box-shadow: 3px 3px rgb(75, 74, 74);
+  animation: fadeIn 3s;
+  /* with that atribute i can limit the text width */
+  word-wrap: break-word;
+
+}
+
+.inner {
+  min-height: 85%;
+}
+
+.deleteBtn {
+  opacity: 0;
+  margin-left: 90%;
+  font-size: 150%;
+  opacity: 100%;
+}

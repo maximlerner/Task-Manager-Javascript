@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Task board</title>
+</head>
+
+<body>
+    <div class="notepad-form">
+        <form>
+            <h1 id="title">My Task Board</h1><br>
+            <div class="formBox">
+                <label for="data">Task Data:</label>
+                <input type="text" id="data" placeholder="Title" />
+            </div>
+            <div class="formBox">
+                <label for="year">Task Year:</label>
+                <input type="date" id="time" />
+            </div>
+            <div class="formBox">
+                <label for="hour">Task hour:</label>
+                <input type="time" id="hour" placeholder="hour" />
+            </div>
+            <div class="actions">
+                <button class="btn green" id="btn">Add Note</button>
+                <button class="btn orange" id="btn-array">delete array</button>
+                <input type="checkbox" id="check" hidden>
+                <label for="check" class="checkmark"></label>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
